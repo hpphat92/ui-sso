@@ -12,6 +12,7 @@
     <link href="style/_social.css" rel="stylesheet">
     <link href="style/_global.css" rel="stylesheet">
     <link href="style/_footer.css" rel="stylesheet">
+    <link href="style/login.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css">
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
 
@@ -30,18 +31,40 @@
         <div class="navbar-header page-scroll pull-left">
             <a href="/" class="logo"><img class="main-logo" src="./img/logo.png"></a>
         </div>
-        <div class="pull-right">
-            <a id="dLabel" class="login-username">
-                Log in
-            </a>
-        </div>
     </div>
     <!-- /.container-fluid -->
 </nav>
 <div class="site-content" id="content">
-    <h4 class="text-center header-product"></h4>
-    Content goes here
-
+    <div class="content-box white-frame">
+        <div class="login-title">
+            <div class="title">Login</div>
+        </div>
+        <div class="login-content">
+            <form class="form-horizontal">
+                <div class="row group-input">
+                    <label class="col-sm-3" for="email">EMAIL *</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="row group-input">
+                    <label class="col-sm-3" for="pwd">PASSWORD *</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="pwd" placeholder="Enter password">
+                    </div>
+                </div>
+                <a href="#" class="forgot-text text-underline">Forgot password? Click here</a>
+                <div class="row m-y-40">
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="main-btn">LOGIN</button>
+                    </div>
+                </div>
+                <div class="form-group text-center signup-text">
+                    <span>Don’t have account?</span><a href="#" class="text-underline"> Sign up now</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <footer id="colophon" class="site-footer footer-layout-a" role="contentinfo">
 
@@ -164,69 +187,7 @@
     </div><!-- .container -->
 </footer>
 <script>
-  var leftTimeout, rightTimeout;
-  $('.slick').slick({
-    infinite: true,
-    slidesToShow: 3,
-    draggable: false,
-    prevArrow: $('.carousel-control.left'),
-    nextArrow: $('.carousel-control.right')
-  })
-  $('.carousel-control').on('click', function () {
-    $('.item-hover.selected').removeClass('selected');
-    $('.slick-current + .item-hover').addClass('selected');
-  })
-  $(document).ready(function () {
-    $('.slick-current + .item-hover').addClass('selected');
-  })
-  //  $('.item-hover').on('click', function () {
-  //    $('.item-hover.selected').removeClass('selected');
-  //    $(this).addClass('selected');
-  //  })
-  $('.slick').delegate('.slick-active', 'click', function () {
-    $('.item-hover.selected').removeClass('selected');
-    $(this).addClass('selected');
-  });
-  $('.slick').delegate('.slick-active:first', 'click', function (e) {
-    e.stopPropagation();
-    var t = $('a.left.carousel-control');
-    if (t.hasClass('slick-hidden')) {
-      $('.item-hover.selected').removeClass('selected');
-      $(this).addClass('selected');
-    } else {
-      $('a.left.carousel-control').click();
-    }
-  })
-  $('.slick').delegate('.slick-active:last', 'click', function (e) {
-    e.stopPropagation();
-    var t = $('a.right.carousel-control');
 
-    if (t.hasClass('slick-hidden')) {
-      $('.item-hover.selected').removeClass('selected');
-      $(this).addClass('selected');
-    } else {
-      $('a.right.carousel-control').click();
-    }
-  })
-  $('.left-hover-area').on('mouseenter', function () {
-    leftTimeout && clearInterval(leftTimeout);
-    leftTimeout = setInterval(function () {
-      $('a.left.carousel-control').click();
-    }, 1000)
-  });
-  $('.left-hover-area').on('mouseleave', function () {
-    leftTimeout && clearInterval(leftTimeout);
-  });
-  $('.right-hover-area').on('mouseenter', function () {
-    rightTimeout && clearInterval(rightTimeout);
-    rightTimeout = setInterval(function () {
-      $('a.right.carousel-control').click();
-    }, 1000)
-  });
-
-  $('.right-hover-area').on('mouseleave', function () {
-    rightTimeout && clearInterval(rightTimeout);
-  });
 </script>
 </body>
 </html>
