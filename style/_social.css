@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+	Social
+--------------------------------------------------------------*/
+	
+	.social {
+		display: inline-block;
+		margin: 0 0px 3px 0px;	
+	}
+
+	.social a {
+		display: block;
+		font-size: 1.6em;
+		padding: 6px;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+
+	.social a {
+	
+	}
+
+		.social .facebook {
+		background: #3b579d;
+	}
+
+	.social .twitter {
+		background: #5ea9dd;
+	}
+
+	.social .linkedin {
+		background: #00649a;
+	}
+
+	.social .google-plus {
+		background: #de4a32;
+	}
+
+	.social .pinterest {
+		background: #cb1a13;
+	}
+
+	.social .youtube {
+		background: #d12122;
+	}
+
+	.social .soundcloud {
+		background: #ff5500;
+	}
+
+	.social .soundcloud .fa {
+		font-size: 0.8em;
+	}
+
+	.social .instagram {
+		background: #447297;
+	}

@@ -1,0 +1,346 @@
+/*--------------------------------------------------------------
+	Global
+--------------------------------------------------------------*/
+	
+	* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+	html, body {
+		 width: 100%;
+		 overflow-x:hidden;
+	}
+
+	html, html a {
+		-webkit-font-smoothing: antialiased;
+    	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	}
+
+	body {
+		background: #ffffff;	
+	}
+
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 0.9em;
+		color: #222222;
+		font-family: $body-font;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $primary-font;
+		color: $primary-color;
+		font-weight: normal;
+		margin: 0;
+		margin-bottom: 0.5em;
+	}
+
+	h1 { 
+		font-size: 2em;
+	}
+	
+	h2 { 
+		font-size: 1.8em; 
+	}
+	
+	h3 {
+		font-size: 1.6em;
+	}
+	
+	h4 {
+		font-size: 1.4em;	
+	}
+	
+	h5 {
+		font-size: 1.2em;	
+	}
+	
+	h6 {
+		font-size: 1em;	
+	}
+	
+	p {
+		font-size: 1em;
+		margin: 0 0 1.5em 0;	
+		line-height: 1.6em;
+	}
+
+	a {
+		-webkit-transition: .60s;
+		transition: .60s;
+		color: $link-primary;	
+		text-decoration: none;
+	}
+	
+	a:hover,
+	a:focus,
+	a:active {
+		outline: 0;
+		outline: 0;
+		color: $link-primary-hover;
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+		vertical-align: middle;
+		 -webkit-transition: all 2s ease-out;
+ 		 transition: all 2s ease-out;
+	}
+
+	a img {
+		border: 0;
+	}
+	
+	b, strong {
+		font-weight: 700;
+	}
+	
+	dfn, cite, em, i {
+		font-style: italic;
+	}
+
+	
+	
+	.btn a,
+	a.btn, 
+	.button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		display: inline-block;
+		width: auto;
+		padding: 10px 15px;
+		margin: 0 0 20px 0;
+		text-decoration: none;
+		-webkit-transition: .60s;
+		transition: .60s;
+		color: $link-primary;	
+		font-family: $primary-font;
+		font-size: 1em;
+		cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+		color: $link-secondary;
+			-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+		background: $link-primary;
+	}
+
+	.btn a:hover, a.btn:hover, .button:hover,
+	button:hover,
+	input[type="button"]:hover,
+	input[type="reset"]:hover,
+	input[type="submit"]:hover {
+		color: $link-secondary-hover;
+		background: $link-primary-hover;
+	}
+
+	input[type="submit"].search-submit {
+		border: 1px solid #333333;
+		padding: 5px;
+		text-transform: none;
+	}
+
+	.desktop-only {
+		display: none;	
+	}
+	
+	.mobile-only {
+		display: block;	
+	}
+	
+	.container {
+		position: relative;
+		max-width: 1028px;
+		margin: 0 auto;	
+		padding: 0 20px;
+	}
+
+	main { font-size: 0.95em}
+
+
+
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+	
+	
+	
+	@media all and ( min-width : 768px ) {
+		
+		h1 {
+			font-size: 2.5em;	
+		}
+		
+		.desktop-only {
+			display: block;	
+		}
+		
+		.mobile-only {
+			display: none;	
+		}
+		
+		.alignleft {
+			display: inline;
+			float: left;
+			margin-right: 1.5em;
+		}
+		
+		.alignright {
+			display: inline;
+			float: right;
+			margin-left: 1.5em;
+		}
+		
+		.aligncenter {
+			clear: both;
+			display: block;
+			margin: 0 auto;
+		}
+
+	}
+
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+
+	.wf-loading h1 {
+		visibility: hidden;	
+	}
+
+	.wf-active h1 {
+	    visibility: visible;
+	  }
+
+	blockquote {
+		margin: 0 1.5em;
+	}
+	address {
+		margin: 0 0 1.5em;
+	}
+	pre {
+		background: #eee;
+		font-family: "Courier 10 Pitch", Courier, monospace;
+		font-size: 15px;
+		font-size: 1.5rem;
+		line-height: 1.6;
+		margin-bottom: 1.6em;
+		max-width: 100%;
+		overflow: auto;
+		padding: 1.6em;
+	}
+	code, kbd, tt, var {
+		font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	}
+	abbr, acronym {
+		border-bottom: 1px dotted #666;
+		cursor: help;
+	}
+	mark, ins {
+		background: #fff9c0;
+		text-decoration: none;
+	}
+	sup,
+	sub {
+		font-size: 75%;
+		height: 0;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+	sup {
+		bottom: 1ex;
+	}
+	sub {
+		top: .5ex;
+	}
+	small {
+		font-size: 75%;
+	}
+	big {
+		font-size: 125%;
+	}
+
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+	/* Text meant only for screen readers */
+	.screen-reader-text {
+		clip: rect(1px, 1px, 1px, 1px);
+		position: absolute !important;
+	}
+
+	.screen-reader-text:hover,
+	.screen-reader-text:active,
+	.screen-reader-text:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar */
+	}
+
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+
+	.clear:before,
+	.clear:after,
+	.entry-content:before,
+	.entry-content:after,
+	.comment-content:before,
+	.comment-content:after,
+	.site-header:before,
+	.site-header:after,
+	.site-content:before,
+	.site-content:after,
+	.site-footer:before,
+	.site-footer:after {
+		content: '';
+		display: table;
+	}
+
+	.clear:after,
+	.entry-content:after,
+	.comment-content:after,
+	.site-header:after,
+	.site-content:after,
+	.site-footer:after {
+		clear: both;
+	}	
+	
+
+	/* Image (full width). */
+	.image-full-width img {
+		height: auto;
+		max-width: 100%;
+	}
+
+	/* Image (left and right) */
+	.image-aligned-left .image img, .image-aligned-right .image img {
+		height: auto;
+		max-width: 100%;
+	}

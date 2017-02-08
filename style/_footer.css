@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+
+	footer.site-footer {
+		position: absolute;
+		color: #ffffff;
+		/*margin-top: 50px;*/
+		min-height: 340px;
+		padding: 70px 0;
+		text-align: center;
+		font-size: 0.9em;
+		background-color: #1e6780;
+		bottom: 0;
+		width: 100%;
+	}
+
+
+	footer.site-footer a {
+		color: #fff;
+	}
+
+	footer.site-footer a:hover {
+		color: #fff;
+	}
+
+	footer.site-footer .menu,
+	footer.site-footer .menu li,
+	footer.site-footer .sub-menu,
+	footer.site-footer .sub-menu li {
+		list-style:  none;
+		margin: 0;
+		padding: 0;
+	}
+
+
+		footer.site-footer .menu > .menu-item {
+			margin: 0 0 40px 0;
+			text-align: left;
+		}
+
+		footer .site-footer .menu a {
+			display: block;
+		}
+
+		footer.site-footer .menu > .menu-item > a {
+			border-bottom: 1px solid #438ea7;
+			padding-bottom: 6px;
+		}
+
+		footer.site-footer .sub-menu {
+			margin-top: 15px;
+		}
+
+		footer.site-footer .sub-menu li {
+			padding: 2px 0;
+		}
+
+		.footer-top {
+			float: left;
+			width: 100%;
+		}
+
+		.footer-bottom {
+			clear: both;
+			color: #438fa9;
+			padding: 50px 0;
+		}
+
+		footer.site-footer .footer-bottom a {
+			color: #438fa9;
+		}
+	
+	@media all and ( min-width : 768px ) {
+		
+
+		footer.site-footer .menu {
+			float: left;
+			width: 80%;
+		}
+
+		footer.site-footer .menu .menu-item {
+			float: left;
+			margin: 0 10px 0 0;
+		}
+
+		footer.site-footer .menu .sub-menu .menu-item {
+			float: none;
+		}
+
+		footer.site-footer {
+			text-align: left
+		}	
+
+		footer.site-footer .social-icons {
+			float: right;
+			width: 20%;
+			text-align: right;
+		}
+
+	}
+html {
+	position: relative;
+	min-height: 100%;
+}
