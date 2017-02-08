@@ -276,6 +276,7 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .left-hover-area {
     width: 386px;
     position: absolute;
@@ -284,9 +285,11 @@ h1 {
     left: 162px;
     background-color: transparent;
 }
+
 .left-hover-area:hover {
     pointer-events: none;
 }
+
 .right-hover-area {
     width: 386px;
     position: absolute;
@@ -295,6 +298,89 @@ h1 {
     right: 162px;
     background-color: transparent;
 }
+
 .right-hover-area:hover {
     pointer-events: none;
+}
+
+.header-product-content {
+    height: 150px;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.header-product-content.ams {
+    background-image: url("./../img/Header_1.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+}
+
+.header-product-content .header {
+    display: table-row;
+}
+
+.header-product-content .header p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    /* margin-left: 50px; */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+
+    background: -webkit-linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65)); /* For Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65)); /* For Safari 5.1 to 6.0 */
+    background: linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65)); /* For Safari 5.1 to 6.0 */
+}
+
+.fancybox-skin {
+    padding: 0 !important;
+    height: auto;
+    width: 750px !important;
+    margin: 0 auto !important;
+}
+
+.fancybox-inner {
+    width: 100% !important;
+}
+
+.product-content-description {
+    padding: 50px 70px;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.fancybox-nav:hover {
+    background: transparent;
+}
+.fancybox-nav i {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #fc3651;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 44px;
+    border-radius: 50%;
+}
+.fancybox-nav {
+    width: 50px;
+}
+.fancybox-next i {
+    position: absolute;
+    right: -25px;
+    top: 210px;
+    text-align: center;;
+}
+.fancybox-prev i {
+    position: absolute;
+    left: -25px;
+    top: 210px;
+    text-align: center;;
 }
