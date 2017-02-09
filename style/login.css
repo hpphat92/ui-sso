@@ -1,0 +1,100 @@
+.white-frame {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+}
+
+.content-box {
+    margin-top: 200px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 734px;
+    margin-bottom: 100px;
+}
+
+.login-title {
+    background: url("../img/Login-signup_03.png");
+    height: 145px;
+    display: table;
+    width: 100%;
+}
+
+.title {
+    background: -webkit-linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65));
+    background: -o-linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65));
+    background: -moz-linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65));
+    background: linear-gradient(rgba(46, 19, 80, 0.41), rgba(27, 63, 195, 0.65));
+    color: #ecf0ff;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 50px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.login-content {
+    padding: 0 50px 20px 50px;
+}
+
+.group-input {
+    margin: 25px 0 15px 0;
+    font-size: 18px;
+    color: #237a93;
+    border-bottom: 2px solid #eceef6;
+    line-height: 50px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.group-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.group-input label {
+    font-weight: bold;
+}
+
+.main-btn {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #ff5063;
+    height: 50px;
+    min-width: 230px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+.main-btn:hover, .main-btn:focus {
+    color: #ffffff;
+    background-color: #FF3B6A;
+}
+
+.forgot-text {
+    color: #237a93;
+    font-size: 14px;
+}
+
+.signup-text, .signup-text a {
+    color: #237a93;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.m-y-40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
