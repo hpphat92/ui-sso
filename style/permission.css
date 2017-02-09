@@ -1,0 +1,63 @@
+.white-frame {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+}
+
+.content-box-permission {
+    margin-top: 200px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 740px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.avatar-user {
+    text-align: center;
+    display: block;
+}
+
+.avatar-user img {
+    margin: 30px 0;
+}
+
+.user-info .user-name {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #009dac;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.user-info .user-email {
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+body.permission-page {
+    background: #fff !important;
+}
+
+.user-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.use-account-btn {
+    text-align: center !important;
+    font-size: 26px !important;
+    background-color: #ff5063;
+    width: 392px;
+    height: 70px;
+    font-weight: bold !important;
+    color: #fff !important;
+}
+
+.signin-difference-account-link {
+    font-size: 16px;
+    color: #009dac;
+    margin-top: 22px !important;
+    margin-bottom: 50px !important;
+}
